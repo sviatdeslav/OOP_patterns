@@ -7,19 +7,19 @@ private:
     int kurs;
 
 public:
-    // Конструктор
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
     UTSnik(std::string Name, int Kurs) {
         name = Name;
         kurs = Kurs;
-        std::cout << "Поступление УТСника: " << name << std::endl;
+        std::cout << "РџРѕСЃС‚СѓРїР»РµРЅРёРµ РЈРўРЎРЅРёРєР°: " << name << std::endl;
     }
 
-    // Деструктор
+    // Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
     ~UTSnik() {
-        std::cout << "Отчисление УТСника: " << name << std::endl;
+        std::cout << "РћС‚С‡РёСЃР»РµРЅРёРµ РЈРўРЎРЅРёРєР°: " << name << std::endl;
     }
 
-    // Геттеры
+    // Р“РµС‚С‚РµСЂС‹
     std::string getName(){
         return name;
     }
@@ -28,7 +28,7 @@ public:
         return kurs;
     }
 
-    // Сеттеры
+    // РЎРµС‚С‚РµСЂС‹
     void setName(std::string newName) {
         name = newName;
     }
@@ -37,8 +37,8 @@ public:
         kurs = newKurs;
     }
 
-    // Метод для вывода информации
+    // РњРµС‚РѕРґ РґР»СЏ РІС‹РІРѕРґР° РёРЅС„РѕСЂРјР°С†РёРё
     void printInfo() const {
-        std::cout << "Имя: " << name << ", Курс: " << kurs << std::endl;
+        std::cout << "РРјСЏ: " << name << ", РљСѓСЂСЃ: " << kurs << std::endl;
     }
 };
