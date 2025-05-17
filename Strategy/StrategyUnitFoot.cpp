@@ -3,21 +3,21 @@
 StrategyUnitFoot::StrategyUnitFoot()
 {
 	std::cout << std::endl;
-	std::cout << "Êîíñòðóêòîð ñòðàòåãèè ïåðåâîäà èç ìåòðîâ â ÿðäû" << std::endl;
+	std::cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÑÑ‚Ñ€Ð°Ñ‚ÐµÐ³Ð¸Ð¸ Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ð° Ð¸Ð· Ð¼ÐµÑ‚Ñ€Ð¾Ð² Ð² ÑÑ€Ð´Ñ‹" << std::endl;
 }
 
 StrategyUnitFoot::~StrategyUnitFoot() {
 	std::cout << std::endl;
-	std::cout << "Äåñòðóêòîð êîíâåðòîðà â ôóòû" << std::endl;
+	std::cout << "Ð”ÐµÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ¾Ð½Ð²ÐµÑ€Ñ‚Ð¾Ñ€Ð° Ð² Ñ„ÑƒÑ‚Ñ‹" << std::endl;
 }
 
 void StrategyUnitFoot::changeUnit(std::vector<std::unique_ptr<float>>& data)
 {
 	std::cout << std::endl;
-	std::cout << "Ïåðåâîä èç ìåòðîâ â ôóòû: " << std::endl;
+	std::cout << "ÐŸÐµÑ€ÐµÐ²Ð¾Ð´ Ð¸Ð· Ð¼ÐµÑ‚Ñ€Ð¾Ð² Ð² Ñ„ÑƒÑ‚Ñ‹: " << std::endl;
 	std::cout << std::endl;
 	for (auto& ptr : data) {
-		std::cout << "Â ìåòðàõ: " << *ptr << " Â ôóòàõ: ";
+		std::cout << "Ð’ Ð¼ÐµÑ‚Ñ€Ð°Ñ…: " << *ptr << " Ð’ Ñ„ÑƒÑ‚Ð°Ñ…: ";
 		if (ptr) {
 			*ptr = *ptr / 0.3048;
 		}
