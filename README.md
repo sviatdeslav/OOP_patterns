@@ -1,2 +1,2 @@
 # OOP_patterns
-Умные указатели и паттерн Singleton
+Умные указатели и паттерны Singleton, Strategy
