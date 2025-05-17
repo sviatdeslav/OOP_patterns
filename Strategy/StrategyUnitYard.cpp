@@ -3,21 +3,21 @@
 StrategyUnitYard::StrategyUnitYard()
 {
 	std::cout << std::endl;
-	std::cout << "Êîíñòğóêòîğ ñòğàòåãèè ïåğåâîäà èç ìåòğîâ â ÿğäû" << std::endl;
+	std::cout << "ĞšĞ¾Ğ½ÑÑ‚Ñ€ÑƒĞºÑ‚Ğ¾Ñ€ ÑÑ‚Ñ€Ğ°Ñ‚ĞµĞ³Ğ¸Ğ¸ Ğ¿ĞµÑ€ĞµĞ²Ğ¾Ğ´Ğ° Ğ¸Ğ· Ğ¼ĞµÑ‚Ñ€Ğ¾Ğ² Ğ² ÑÑ€Ğ´Ñ‹" << std::endl;
 }
 
 StrategyUnitYard::~StrategyUnitYard() {
 	std::cout << std::endl;
-	std::cout << "Äåñòğóêòîğ êîíâåğòîğà â ÿğäû" << std::endl;
+	std::cout << "Ğ”ĞµÑÑ‚Ñ€ÑƒĞºÑ‚Ğ¾Ñ€ ĞºĞ¾Ğ½Ğ²ĞµÑ€Ñ‚Ğ¾Ñ€Ğ° Ğ² ÑÑ€Ğ´Ñ‹" << std::endl;
 }
 
 void StrategyUnitYard::changeUnit(std::vector<std::unique_ptr<float>>& data)
 {
 	std::cout << std::endl;
-	std::cout << "Ïåğåâîä èç ìåòğîâ â ÿğäû: " << std::endl;
+	std::cout << "ĞŸĞµÑ€ĞµĞ²Ğ¾Ğ´ Ğ¸Ğ· Ğ¼ĞµÑ‚Ñ€Ğ¾Ğ² Ğ² ÑÑ€Ğ´Ñ‹: " << std::endl;
 	std::cout << std::endl;
 	for (auto& ptr : data) {
-		std::cout << "Â ìåòğàõ: " << *ptr << " Â ÿğäàõ: ";
+		std::cout << "Ğ’ Ğ¼ĞµÑ‚Ñ€Ğ°Ñ…: " << *ptr << " Ğ’ ÑÑ€Ğ´Ğ°Ñ…: ";
 		if (ptr) {
 			*ptr = *ptr / 0.9144;
 		}
