@@ -1,11 +1,11 @@
 #include "Repetition.h"
 
 Repetition::Repetition(int repetition) {
-	std::cout << "Êîëè÷åñòâî ïðîâåä¸ííûõ ðåïåòèöèé: " << repetition << std::endl;
+	std::cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¾Ð²ÐµÐ´Ñ‘Ð½Ð½Ñ‹Ñ… Ñ€ÐµÐ¿ÐµÑ‚Ð¸Ñ†Ð¸Ð¹: " << repetition << std::endl;
 	_repetition = repetition;
 }
 
 float Repetition::Power_of_Show() {
-	float power = 5 * rand() % _repetition; // Ëþáîâü çðèòåëåé ê êîìàíäå
+	float power = 5 * rand() % _repetition; // Ð›ÑŽÐ±Ð¾Ð²ÑŒ Ð·Ñ€Ð¸Ñ‚ÐµÐ»ÐµÐ¹ Ðº ÐºÐ¾Ð¼Ð°Ð½Ð´Ðµ
 	return power;
 }
