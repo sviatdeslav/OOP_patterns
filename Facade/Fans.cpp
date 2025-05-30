@@ -1,11 +1,11 @@
 #include "Fans.h"
 
 Fans::Fans(int fans) {
-	std::cout << "Êîëè÷åñòâî áîëåëüùèêîâ: " << fans << std::endl;
+	std::cout << "ĞšĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ğ±Ğ¾Ğ»ĞµĞ»ÑŒÑ‰Ğ¸ĞºĞ¾Ğ²: " << fans << std::endl;
 	_fans = fans;
 }
 
 int Fans::Love_to_Team() {
-	int love = 4 * rand() % _fans; // Ëşáîâü çğèòåëåé ê êîìàíäå
+	int love = 4 * rand() % _fans; // Ğ›ÑĞ±Ğ¾Ğ²ÑŒ Ğ·Ñ€Ğ¸Ñ‚ĞµĞ»ĞµĞ¹ Ğº ĞºĞ¾Ğ¼Ğ°Ğ½Ğ´Ğµ
 	return love;
 }
