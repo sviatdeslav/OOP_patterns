@@ -7,14 +7,14 @@ KVN::KVN(std::string team, int repetition, int fans) {
 }
 
 void KVN::Prediction_to_Game() {
-    std::cout << "Ìåòîä ñ èñïîëüçîâàíèåì ôàñàäà" << std::endl;
-    Team* team = new Team(_team); // Ñîçäàíèå êîìàíäû
-    Repetition* repetition = new Repetition(_repetition); // Ïðîâåäåíèå óêàçàííîãî êîëè÷åñòâà ðåïåòèöèé
-    Fans* fans = new Fans(_fans); // Ñîçäàíèå ôàíàòîâ
+    std::cout << "ÐœÐµÑ‚Ð¾Ð´ Ñ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸ÐµÐ¼ Ñ„Ð°ÑÐ°Ð´Ð°" << std::endl;
+    Team* team = new Team(_team); // Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñ‹
+    Repetition* repetition = new Repetition(_repetition); // ÐŸÑ€Ð¾Ð²ÐµÐ´ÐµÐ½Ð¸Ðµ ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð° Ñ€ÐµÐ¿ÐµÑ‚Ð¸Ñ†Ð¸Ð¹
+    Fans* fans = new Fans(_fans); // Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ñ„Ð°Ð½Ð°Ñ‚Ð¾Ð²
 
     int love_to_team = fans->Love_to_Team();
     float power_of_show = repetition->Power_of_Show();
-    std::cout << "Øàíñû íà ïîáåäó " << team->Chance_to_Win(love_to_team, power_of_show) << " %" << std::endl;
+    std::cout << "Ð¨Ð°Ð½ÑÑ‹ Ð½Ð° Ð¿Ð¾Ð±ÐµÐ´Ñƒ " << team->Chance_to_Win(love_to_team, power_of_show) << " %" << std::endl;
 
     delete team;
     delete repetition;
