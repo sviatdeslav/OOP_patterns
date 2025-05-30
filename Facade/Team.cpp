@@ -1,12 +1,12 @@
 #include "Team.h"
 
 Team::Team(std::string team) {
-	std::cout << "Êîìàíäà: " << team << std::endl;
+	std::cout << "ĞšĞ¾Ğ¼Ğ°Ğ½Ğ´Ğ°: " << team << std::endl;
 	_team = team;
 }
 
 float Team::Chance_to_Win(int love_to_team, float power_of_show) {
-	int power_of_name = rand() % 100; // Èçâåñòíîñòü êîìàíäû
-	float chance_to_win = (love_to_team % 100 + (int) power_of_show % 100 + power_of_name) / 3; // Âåğîÿòíîñòü ïîáåäû êîìàíäû â %
+	int power_of_name = rand() % 100; // Ğ˜Ğ·Ğ²ĞµÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ ĞºĞ¾Ğ¼Ğ°Ğ½Ğ´Ñ‹
+	float chance_to_win = (love_to_team % 100 + (int) power_of_show % 100 + power_of_name) / 3; // Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¿Ğ¾Ğ±ĞµĞ´Ñ‹ ĞºĞ¾Ğ¼Ğ°Ğ½Ğ´Ñ‹ Ğ² %
 	return chance_to_win;
 }
